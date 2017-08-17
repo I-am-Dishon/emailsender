@@ -27,12 +27,12 @@ class Email_Controller extends CI_Controller
   		'protocol' => 'smtp', 
   		'smtp_host' => 'ssl://smtp.googlemail.com', 
   		'smtp_port' => 465, 
-  		'smtp_user' => 'goro.dishon@gmail.com', 
-  		'smtp_pass' => 'shakxexwdehmvuxe',
+  		'smtp_user' => ''//your gmail address, 
+  		'smtp_pass' => ''//your gmail account password,
   		'wordwrap' =>TRUE, ); 
 
-		$from_email = "goro.dishon@gmail.com";
-		//$to_email = "goro.dishon@students.jkuat.ac.ke";
+		$from_email = ""//your gmail address;
+		
 		$to_email = $this->input->post('email');
 
 		$this->load->library('email', $config);
